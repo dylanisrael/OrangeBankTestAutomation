@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14294000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug669Stepdefs.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-09T10:52:59.189Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3406000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.orangebank.stepDefinitions.CucumberHooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Bug 669 Source code download",
+        "description": "",
+        "id": "anomalies-majeures;bug-669-source-code-download",
+        "after": [
+          {
+            "result": {
+              "duration": 5927000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.orangebank.stepDefinitions.CucumberHooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23564000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on notre idee de banque",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug669Stepdefs.userClickOnNotreIdeeDeBanque()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10987000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on campagne de lancement",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug669Stepdefs.userClickOnCampagneDeLancement()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.orangebank.pages.LabanquemobilePage.verifictionBug669(LabanquemobilePage.java:34)\n\tat com.orangebank.stepDefinitions.Bug669Stepdefs.aucunFichierNeDevraitEtreTelecharge(Bug669Stepdefs.java:30)\n\tat ✽.No files should be downloaded(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MajorAbnormalities.feature:9)\n",
+              "duration": 691000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "No files should be downloaded",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug669Stepdefs.aucunFichierNeDevraitEtreTelecharge()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Anomalies Majeures",
+    "description": "",
+    "id": "anomalies-majeures",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MajorAbnormalities.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10783000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug669Stepdefs.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-09T10:53:58.096Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1659000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.orangebank.stepDefinitions.CucumberHooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Bug 663 Empty menu displayed",
+        "description": "",
+        "id": "annomalies-mineures;bug-663-empty-menu-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 4979000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.orangebank.stepDefinitions.CucumberHooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6620000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to ForumBankOrange",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug663Stepdefs.goToForumBankOrange()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6026000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on first question and choose read more",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug663Stepdefs.clickOnFirstQuestionAndChooseReadMore()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1051000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the dropdown",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug663Stepdefs.userClickOnTheDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\n\tat org.testng.Assert.assertTrue(Assert.java:45)\n\tat org.testng.Assert.assertTrue(Assert.java:55)\n\tat com.orangebank.pages.ForumOrangebankPage.verificationBug663(ForumOrangebankPage.java:57)\n\tat com.orangebank.stepDefinitions.Bug663Stepdefs.aContentShouldBeDisplayedIn(Bug663Stepdefs.java:30)\n\tat ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MinorAbnormalities.feature:10)\n",
+              "duration": 78000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "a content should be displayed in",
+            "match": {
+              "location": "com.orangebank.stepDefinitions.Bug663Stepdefs.aContentShouldBeDisplayedIn()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Annomalies mineures",
+    "description": "",
+    "id": "annomalies-mineures",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MinorAbnormalities.feature",
+    "tags": []
+  }
+]

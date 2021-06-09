@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 94.965 s <<< FAILURE! - in TestSuite
+com.orangebank.TestRunner.runScenario["Bug 669 Source code download", "Optional[Anomalies Majeures]"](1)  Time elapsed: 59.112 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+com.orangebank.TestRunner.runScenario["Bug 663 Empty menu displayed", "Optional[Annomalies mineures]"](2)  Time elapsed: 31.219 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+

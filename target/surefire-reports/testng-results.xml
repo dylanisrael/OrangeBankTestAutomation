@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OrangeBankTestAutomation" duration-ms="94412" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:54:32 WAT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="ChromeTest" duration-ms="94412" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:54:32 WAT">
+      <class name="com.orangebank.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="setUpClass" is-config="true" duration-ms="609" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:52:59 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" duration-ms="59070" started-at="2021-06-09T11:52:59 WAT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-09T11:53:58 WAT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bug 669 Source code download"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Anomalies Majeures]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.orangebank.pages.LabanquemobilePage.verifictionBug669(LabanquemobilePage.java:34)
+at com.orangebank.stepDefinitions.Bug669Stepdefs.aucunFichierNeDevraitEtreTelecharge(Bug669Stepdefs.java:30)
+at ✽.No files should be downloaded(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MajorAbnormalities.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" duration-ms="31210" started-at="2021-06-09T11:53:58 WAT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-09T11:54:29 WAT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Bug 663 Empty menu displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Annomalies mineures]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.orangebank.pages.ForumOrangebankPage.verificationBug663(ForumOrangebankPage.java:57)
+at com.orangebank.stepDefinitions.Bug663Stepdefs.aContentShouldBeDisplayedIn(Bug663Stepdefs.java:30)
+at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MinorAbnormalities.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="tearDownClass" is-config="true" duration-ms="3482" started-at="2021-06-09T11:54:29 WAT" finished-at="2021-06-09T11:54:32 WAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.orangebank.TestRunner -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- OrangeBankTestAutomation -->
+</testng-results>
