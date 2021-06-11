@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>OrangeBankTestAutomation</td>
         <td>1</td>
-      <td>09 Jun 2021, 11:54</td>
+      <td>11 Jun 2021, 17:21</td>
     </tr>
   </tbody>
 </table>
@@ -129,9 +129,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Anomalies Majeures</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >2</td>
           <td      class="failed"    >1</td>
-          <td >0</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="49536000000">49.536</td>
+          <td class="duration" data-value="31668000000">31.668</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.294</span>
+  <span class="lead-duration duration">13.628</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on home page</span>
 
-  <span class="lead-duration duration">14.294</span>
+  <span class="lead-duration duration">13.628</span>
 
 </div>
 
@@ -272,7 +272,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">35.242</span>
+  <span class="lead-duration duration">18.040</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
@@ -310,7 +310,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.orangebank.stepDefinitions.CucumberHooks.setup()</span>
 
-  <span class="lead-duration duration">3.406</span>
+  <span class="lead-duration duration">3.304</span>
 
           </div>
 
@@ -347,7 +347,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click on notre idee de banque</span>
 
-  <span class="lead-duration duration">23.564</span>
+  <span class="lead-duration duration">11.955</span>
 
 </div>
 
@@ -370,38 +370,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">user click on campagne de lancement</span>
 
-  <span class="lead-duration duration">10.987</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">No files should be downloaded</span>
-
-  <span class="lead-duration duration">0.691</span>
+  <span class="lead-duration duration">6.085</span>
 
 </div>
 
@@ -413,21 +386,68 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>java.lang.AssertionError:</a>
+          <a>org.openqa.selenium.ElementClickInterceptedException:</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at com.orangebank.pages.LabanquemobilePage.verifictionBug669(LabanquemobilePage.java:34)
-	at com.orangebank.stepDefinitions.Bug669Stepdefs.aucunFichierNeDevraitEtreTelecharge(Bug669Stepdefs.java:30)
-	at &#10045;.No files should be downloaded(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MajorAbnormalities.feature:9)
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (336, 4518)
+  (Session info: chrome=91.0.4472.101)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'Maknim.local', ip: 'fe80:0:0:0:86c:dc03:3a03:3834%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_292'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/x5/2dr0tv6j4pv...}, goog:chromeOptions: {debuggerAddress: localhost:63912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5764eb9f1ffee1b3ac2e8d512a115afb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at com.orangebank.pages.LabanquemobilePage.clickOnCampagneDeLancement(LabanquemobilePage.java:18)
+	at com.orangebank.stepDefinitions.Bug669Stepdefs.userClickOnCampagneDeLancement(Bug669Stepdefs.java:25)
+	at &#10045;.user click on campagne de lancement(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MajorAbnormalities.feature:8)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">No files should be downloaded</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -465,7 +485,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.orangebank.stepDefinitions.CucumberHooks.teardown()</span>
 
-  <span class="lead-duration duration">5.927</span>
+  <span class="lead-duration duration">5.195</span>
 
           </div>
 

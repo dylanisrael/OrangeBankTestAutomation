@@ -62,7 +62,7 @@ public class SendEmail extends BaseClass{
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
 
             // Subject of the email
-            message.setSubject("Leetchi Retest");
+            message.setSubject(siteTeste+" retest");
 
             Multipart multipart = new MimeMultipart();
 
