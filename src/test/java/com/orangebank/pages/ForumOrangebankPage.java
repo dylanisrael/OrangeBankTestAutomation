@@ -55,7 +55,5 @@ public class ForumOrangebankPage extends BaseClass {
         }
         writeResultInFile("663",bugStatus);
         Assert.assertTrue(corrected);
-
-
     }
 }

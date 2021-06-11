@@ -23,6 +23,7 @@ import org.apache.commons.io.FileUtils;
 
 public class BaseClass {
 
+    public static String siteTeste="Orange Bank";
     public static WebDriver driver;
     static NgWebDriver NgWebDriver;
     static  JavascriptExecutor jsDriver;

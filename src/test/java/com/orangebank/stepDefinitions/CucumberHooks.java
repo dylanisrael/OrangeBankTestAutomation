@@ -25,7 +25,7 @@ public class CucumberHooks extends BaseClass {
         closeDriver(driver);
         ExcelManager.formatResult("Verification.xlsx","Data");
 //        SendEmail.sendEmailTo("fokourou@zenity.fr","OrangeBank");
-        SendEmail.sendEmailTo("israel.mouofopk68@gmail.com","OrangeBank");
+        SendEmail.sendEmailTo("fokourou@zenity.fr",siteTeste);
     }
 
 }
