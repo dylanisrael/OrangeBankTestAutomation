@@ -5,11 +5,23 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+import java.nio.file.Paths;
+import java.util.HashMap;
+
 public abstract class AbsWebDriverImpl {
 
     protected ChromeOptions getChromeOptions(){
+        /**
+         * change default chromedownload directory
+         */
+        String downloadDir = Paths.get("target").toAbsolutePath().toString();
+        HashMap<String, Object> prefs = new HashMap<>();
+        prefs.put("download.default_directory", downloadDir); // Bypass default download directory in Chrome
+        prefs.put("safebrowsing.enabled", "false");
+        
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.setExperimentalOption("prefs",prefs);
         chromeOptions.setHeadless(Properties.Config.getHeadless());
 
             if (Properties.Config.getHeadless()){

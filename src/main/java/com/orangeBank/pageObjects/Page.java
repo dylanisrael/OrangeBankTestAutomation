@@ -17,6 +17,7 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.function.Function;
 
@@ -252,8 +253,9 @@ public class Page {
      * @return
      */
     protected boolean filePresent() {
+        String downloadDir = Paths.get("target").toAbsolutePath().toString();
         String path = "/Users/dylanIsrael/Downloads/";
-        File folder = new File(path);
+        File folder = new File(downloadDir);
         //List the files on that folder
         File[] listOfFiles = folder.listFiles();
         boolean found = false;
