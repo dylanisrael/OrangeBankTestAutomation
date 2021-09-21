@@ -1,12 +1,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="OrangeBankTestAutomation" thread-count="3" parallel="tests">
-    <test name="ChromeTest">
-        <parameter name="browser" value="Chrome"/>
-        <classes>
-            <class name="com.orangebank.TestRunner">
 
-            </class>
-        </classes>
-    </test>
+<!--⚠️ change with your current ProjectName-->
 
+<suite name="femmeActuelle" verbose="1" >
+<test name="Verification Test" >
+    <classes>
+        <class name="com.femmeActuelle.runners.TestRunner" />
+    </classes>
+</test>
 </suite>

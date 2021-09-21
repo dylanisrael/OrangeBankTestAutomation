@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="OrangeBankTestAutomation" duration-ms="94412" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:54:32 WAT">
+  <suite name="Surefire suite" duration-ms="33162" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:44Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="ChromeTest" duration-ms="94412" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:54:32 WAT">
-      <class name="com.orangebank.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="setUpClass" is-config="true" duration-ms="609" started-at="2021-06-09T11:52:58 WAT" finished-at="2021-06-09T11:52:59 WAT">
+    <test name="Surefire test" duration-ms="33162" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:44Z">
+      <class name="com.orangeBank.runners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="setUpClass" is-config="true" duration-ms="4132" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" duration-ms="59070" started-at="2021-06-09T11:52:59 WAT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-09T11:53:58 WAT">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="beforeTest" is-config="true" duration-ms="4330" started-at="2021-09-21T09:13:15Z" finished-at="2021-09-21T09:13:20Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" duration-ms="13019" started-at="2021-09-21T09:13:20Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-21T09:13:33Z">
           <params>
             <param index="0">
               <value>
@@ -27,26 +39,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.orangebank.pages.LabanquemobilePage.verifictionBug669(LabanquemobilePage.java:34)
-at com.orangebank.stepDefinitions.Bug669Stepdefs.aucunFichierNeDevraitEtreTelecharge(Bug669Stepdefs.java:30)
-at ✽.No files should be downloaded(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MajorAbnormalities.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="runScenario" duration-ms="31210" started-at="2021-06-09T11:53:58 WAT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-09T11:54:29 WAT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" duration-ms="8469" started-at="2021-09-21T09:13:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-21T09:13:41Z">
           <params>
             <param index="0">
               <value>
@@ -61,28 +57,30 @@ at ✽.No files should be downloaded(file:///Users/dylanIsrael/IdeaProjects/cucu
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[❌ La contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.orangebank.pages.ForumOrangebankPage.verificationBug663(ForumOrangebankPage.java:57)
-at com.orangebank.stepDefinitions.Bug663Stepdefs.aContentShouldBeDisplayedIn(Bug663Stepdefs.java:30)
-at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MinorAbnormalities.feature:10)
+              <![CDATA[java.lang.AssertionError: ❌ La contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.orangeBank.steps.ForumOrangeBankPageSteps.aContentShouldBeDisplayedIn(ForumOrangeBankPageSteps.java:39)
+at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MinorAbnormalities.feature:12)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangebank.TestRunner@32eebfca]" name="tearDownClass" is-config="true" duration-ms="3482" started-at="2021-06-09T11:54:29 WAT" finished-at="2021-06-09T11:54:32 WAT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="tearDown" is-config="true" duration-ms="257" started-at="2021-09-21T09:13:41Z" finished-at="2021-09-21T09:13:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="tearDownClass" is-config="true" duration-ms="2916" started-at="2021-09-21T09:13:41Z" finished-at="2021-09-21T09:13:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.orangebank.TestRunner -->
-    </test> <!-- ChromeTest -->
-  </suite> <!-- OrangeBankTestAutomation -->
+      </class> <!-- com.orangeBank.runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

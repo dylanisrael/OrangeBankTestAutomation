@@ -1,8 +1,10 @@
+@MinorAbnormalities
+@severity=minor
 Feature: Annomalies mineures
 
   Background:
     Given user is on home page
-
+@bug_663
   Scenario: Bug 663 Empty menu displayed
     And go to ForumBankOrange
     And click on first question and choose read more

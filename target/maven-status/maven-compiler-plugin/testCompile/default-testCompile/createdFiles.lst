@@ -1,0 +1,5 @@
+com/orangeBank/runners/BaseRunner.class
+com/orangeBank/steps/ForumOrangeBankPageSteps.class
+com/orangeBank/steps/LaBanqueMobilePageSteps.class
+com/orangeBank/runners/TestRunner.class
+com/orangeBank/steps/HomePageStep.class
