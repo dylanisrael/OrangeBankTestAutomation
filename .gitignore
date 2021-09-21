@@ -9,7 +9,4 @@ local_driver/
 allure-results/
 logs/
 .allure/
-*allure/
-*-report/
-.settings/
-
+allure-report/
