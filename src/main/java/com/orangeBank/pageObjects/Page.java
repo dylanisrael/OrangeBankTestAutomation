@@ -28,11 +28,12 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class Page {
 
-    @FindBy( css = "div.message-component.message-row.mainrow")
+    @FindBy( className = "didomi-popup-notice-with-data-processing")
     private WebElement popInCookieWrap;
-
-    @FindBy( css = "button.message-component.message-button.no-children.focusable.accepter.sp_choice_type_11.last-focusable-el")
+    
+    @FindBy(id = "didomi-notice-agree-button")
     private WebElement popInCookieButton;
+
     
     String jsClickCode = "arguments[0].scrollIntoView(true); arguments[0].click();";
 

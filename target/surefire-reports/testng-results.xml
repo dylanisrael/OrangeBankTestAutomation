@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="21266" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:58Z">
+  <suite name="Surefire suite" duration-ms="15981" started-at="2021-10-06T16:12:46Z" finished-at="2021-10-06T16:13:02Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="21266" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:58Z">
+    <test name="Surefire test" duration-ms="15981" started-at="2021-10-06T16:12:46Z" finished-at="2021-10-06T16:13:02Z">
       <class name="com.orangeBank.runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="setUpClass" is-config="true" duration-ms="861" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:37Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="setUpClass" is-config="true" duration-ms="883" started-at="2021-10-06T16:12:46Z" finished-at="2021-10-06T16:12:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="beforeTest" is-config="true" duration-ms="3105" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:41Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="beforeTest" is-config="true" duration-ms="3479" started-at="2021-10-06T16:12:47Z" finished-at="2021-10-06T16:12:50Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="runScenario" duration-ms="14346" started-at="2021-10-06T15:59:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-06T15:59:55Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="runScenario" duration-ms="9146" started-at="2021-10-06T16:12:50Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-06T16:13:00Z">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@ at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="tearDown" is-config="true" duration-ms="126" started-at="2021-10-06T15:59:55Z" finished-at="2021-10-06T15:59:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="tearDown" is-config="true" duration-ms="114" started-at="2021-10-06T16:13:00Z" finished-at="2021-10-06T16:13:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="tearDownClass" is-config="true" duration-ms="2717" started-at="2021-10-06T15:59:55Z" finished-at="2021-10-06T15:59:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangeBank.runners.TestRunner@446293d]" name="tearDownClass" is-config="true" duration-ms="2337" started-at="2021-10-06T16:13:00Z" finished-at="2021-10-06T16:13:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
