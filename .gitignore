@@ -1,6 +1,5 @@
 .DS_Store
 .idea/
-target/
 *.sln.iml
 *.exe
 *.class
@@ -12,3 +11,4 @@ logs/
 allure-report/
 config/config.properties
 *.log
+target/
