@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="33162" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:44Z">
+  <suite name="Surefire suite" duration-ms="21266" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:58Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="33162" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:44Z">
+    <test name="Surefire test" duration-ms="21266" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:58Z">
       <class name="com.orangeBank.runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="setUpClass" is-config="true" duration-ms="4132" started-at="2021-09-21T09:13:11Z" finished-at="2021-09-21T09:13:15Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="setUpClass" is-config="true" duration-ms="861" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="beforeTest" is-config="true" duration-ms="4330" started-at="2021-09-21T09:13:15Z" finished-at="2021-09-21T09:13:20Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="beforeTest" is-config="true" duration-ms="3105" started-at="2021-10-06T15:59:37Z" finished-at="2021-10-06T15:59:41Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -26,23 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" duration-ms="13019" started-at="2021-09-21T09:13:20Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-21T09:13:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Bug 669 Source code download"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Anomalies Majeures]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="runScenario" duration-ms="8469" started-at="2021-09-21T09:13:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-21T09:13:41Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="runScenario" duration-ms="14346" started-at="2021-10-06T15:59:41Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-06T15:59:55Z">
           <params>
             <param index="0">
               <value>
@@ -57,14 +41,14 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[❌ La contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]]]>
+              <![CDATA[❌ Le contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ La contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: ❌ Le contenu du menu n'est pas visible Bug non corrige expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
-at com.orangeBank.steps.ForumOrangeBankPageSteps.aContentShouldBeDisplayedIn(ForumOrangeBankPageSteps.java:39)
+at com.orangeBank.steps.ForumOrangeBankPageSteps.aContentShouldBeDisplayedIn(ForumOrangeBankPageSteps.java:36)
 at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/cucumber/OrangeBankTestAutomation/src/test/resources/features/MinorAbnormalities.feature:12)
 ]]>
             </full-stacktrace>
@@ -72,11 +56,11 @@ at ✽.a content should be displayed in(file:///Users/dylanIsrael/IdeaProjects/c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="tearDown" is-config="true" duration-ms="257" started-at="2021-09-21T09:13:41Z" finished-at="2021-09-21T09:13:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="tearDown" is-config="true" duration-ms="126" started-at="2021-10-06T15:59:55Z" finished-at="2021-10-06T15:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangeBank.runners.TestRunner@394df057]" name="tearDownClass" is-config="true" duration-ms="2916" started-at="2021-09-21T09:13:41Z" finished-at="2021-09-21T09:13:44Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.orangeBank.runners.TestRunner@793be5ca]" name="tearDownClass" is-config="true" duration-ms="2717" started-at="2021-10-06T15:59:55Z" finished-at="2021-10-06T15:59:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

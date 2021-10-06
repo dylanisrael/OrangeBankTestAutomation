@@ -6,22 +6,20 @@ import org.testng.Assert;
 import java.awt.*;
 
 public class ForumOrangebankPage extends Page {
-    private String pageUrl = "https://forum.orangebank.fr/";
-
-    @FindBy(xpath = "//body/div[@id='bd']/div[@id='yui-main']/div[1]/div[1]/div[1]/div[5]/div[1]/ul[2]")
-    public  WebElement cardDropdown;
     
-    @FindBy (xpath = "//body/div[@id='bd']/div[@id='yui-main']/div[1]/div[1]/div[1]/div[5]/a[1]")
+    private String pageUrl = "https://forum.orangebank.fr/";
+    
+    @FindBy (css = ".question-actions .btn-actions")
     public  WebElement dropdown;
     
     @FindBy(id = "didomi-notice-agree-button")
     public  WebElement forumBankAcceptCookie;
     
-    @FindBy(xpath = "//body/div[@id='bd']/div[@id='yui-main']/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/ul[2]/li[1]/div[1]/div[1]")
-    public  WebElement premiereQuestion;
+    @FindBy(className = "category-id-3639")
+    public  WebElement firstQuestion;
     
-    @FindBy(xpath="//body/div[@id='bd']/div[@id='yui-main']/div[1]/div[1]/div[12]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/ul[2]/li[1]/div[1]/div[1]/div[1]/div[2]/a[1]")
-    public  WebElement lireLasuite;
+    @FindBy(css = ".category-id-3639 .read-more")
+    public  WebElement readMore;
 
 
     public void gotoForum(){
@@ -34,12 +32,12 @@ public class ForumOrangebankPage extends Page {
         clickOn(dropdown);
     }
     public  void clickOnLireLasuite(){
-        clickOn(lireLasuite);
+        clickOn(readMore);
     }
 
-    public void clickOnPremiereQuestion() {
+    public void clickOnFirstQuestion() {
         scroll(3000);
-        clickOn(premiereQuestion);
+        clickOn(firstQuestion);
     }
     public boolean verificationBug663() {
         

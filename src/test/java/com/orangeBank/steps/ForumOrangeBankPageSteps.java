@@ -5,9 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-//import io.cucumber.java8.En;
-
-import java.io.IOException;
 
 public class ForumOrangeBankPageSteps {
     
@@ -24,7 +21,7 @@ public class ForumOrangeBankPageSteps {
 
     @And("click on first question and choose read more")
     public void clickOnFirstQuestionAndChooseReadMore()  {
-        forumOrangebankPage.clickOnPremiereQuestion();
+        forumOrangebankPage.clickOnFirstQuestion();
         forumOrangebankPage.clickOnLireLasuite();
     }
 

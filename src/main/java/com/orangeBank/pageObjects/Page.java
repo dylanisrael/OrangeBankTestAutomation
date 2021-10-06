@@ -2,6 +2,7 @@ package com.orangeBank.pageObjects;
 
 import com.orangeBank.config.Configuration;
 import com.orangeBank.config.Properties;
+import com.orangeBank.context.ScenarioContext;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.logging.log4j.Logger;
@@ -47,6 +48,8 @@ public class Page {
     protected Logger Log;
 
     protected Configuration config = Properties.Config;
+    protected String env = Properties.Config.getEnvironment();
+    protected ScenarioContext context;
 
     //    Page constructor
     Page(){
@@ -254,7 +257,6 @@ public class Page {
      */
     protected boolean filePresent() {
         String downloadDir = Paths.get("target").toAbsolutePath().toString();
-        String path = "/Users/dylanIsrael/Downloads/";
         File folder = new File(downloadDir);
         //List the files on that folder
         File[] listOfFiles = folder.listFiles();
@@ -269,7 +271,7 @@ public class Page {
                     String fileName = listOfFile.getName();
                     // System.out.println("File " + listOfFile.getName());
                     if (fileName.matches("oembed")) {
-                        f = new File(path+fileName);
+                        f = new File(downloadDir+fileName);
                         found = true;
                         System.out.println("fichier trouve  " + found);
                         System.out.println(f);

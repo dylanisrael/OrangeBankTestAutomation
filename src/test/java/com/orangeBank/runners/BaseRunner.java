@@ -29,7 +29,7 @@ public class BaseRunner extends AbstractTestNGCucumberTests {
     }
     
     @AfterClass
-    public static void tearDown() throws ConfigurationException, IOException {
+    public static void tearDown() throws IOException {
         AllureFilesManager.createEnvironmentPropertiesFile();
         AllureFilesManager.createCategorieJsonFile();
         AllureFilesManager.createExecutorJsonFile();
