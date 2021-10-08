@@ -46,10 +46,10 @@ public class ForumOrangebankPage extends Page {
         int height = (int) size.getSize().getHeight();
         System.out.println(height);
         if (height > 1){
-            System.out.println("✅  Le contenu du menu est visible Bug corrige");
+            Log.info("✅  Le contenu du menu est visible Bug corrige");
             return true;
         }else{
-            System.out.println("❌  La contenu du menu n'est pas visible Bug non corrige");
+            Log.info("❌  La contenu du menu n'est pas visible Bug non corrige");
         }
         return false;
     }

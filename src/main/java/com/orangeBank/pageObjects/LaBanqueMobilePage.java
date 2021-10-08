@@ -2,28 +2,29 @@ package com.orangeBank.pageObjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
-import java.io.IOException;
-
+import java.util.List;
 
 public class LaBanqueMobilePage extends Page {
     
-    @FindBy(xpath = "//body/div[3]/main[1]/div[1]/article[1]/section[7]/div[2]/a[1]")
-    private  WebElement campagneDeLancement2017Element;
+    @FindBy(css = ".ob-grid-row > a")
+    private  List<WebElement> campagneDeLancement2017Element;
 
-    public  void clickOnCampagneDeLancement() throws InterruptedException {
+    public  void clickOnCampagneDeLancement()  {
         scroll(4000);
-        clickOn(campagneDeLancement2017Element);
+        clickOn(campagneDeLancement2017Element.stream()
+                .filter(card ->card.getAttribute("href")
+                        .toLowerCase().contains("lancement"))
+                .findFirst().get());
     }
 
-    public  boolean verifictionBug669() throws IOException {
+    public  boolean verifictionBug669()  {
         boolean testResult = filePresent();
         if (testResult){
-            System.out.println("❌  Le fichier est telecharge bug non corrige");
+            Log.info("❌  Le fichier est telecharge bug non corrige");
         }
         else {
-            System.out.println("✅   Le fichie n'est pas telecharge bug corrige");
+            Log.info("✅   Le fichie n'est pas telecharge bug corrige");
         }
         return testResult;
     }
